@@ -1,0 +1,7 @@
+# Dataset handling
+
+Source: [OpenNeuro ds005620 v1.0.0](https://openneuro.org/datasets/ds005620/versions/1.0.0), [dataset paper](https://doi.org/10.18112/openneuro.ds005620.v1.0.0). Obtain it from OpenNeuro under the dataset's own terms. The local path `data/raw/` is ignored by Git. Do not commit recordings or participant-level data. Record the dataset snapshot/version and checksums separately before analysis.
+
+The registration describes multichannel EEG with repeated awakening event markers. Do not assume a dataset `trial_type` is the exact response event: inspect `*_events.tsv`, `*_events.json`, task descriptions and the acquisition protocol. The `audit` command inventories files and shows counts of event labels; it does **not** choose an anchor. Capture the agreed mapping, time origin, clock alignment and reviewer's name in the decision register. BIDS onset seconds are normally relative to their paired recording, but confirm this for the chosen files.
+
+For each reviewed episode, create one row in a manifest following `examples/episodes.example.csv`: subject and recording path, an explicit awakening/response anchor in seconds, a control-window *start* in seconds, and a path to the source events table. The pre window ends at the anchor; the post window starts there; the control window starts at `control_onset_s`. Both durations (10 and 30 s) are checked separately, including that controls remain away from all supplied markers. Do not put a recording in both training/selection and evaluation for the same participant-level inference.

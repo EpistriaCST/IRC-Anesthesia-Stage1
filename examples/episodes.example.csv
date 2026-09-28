@@ -1,0 +1,2 @@
+subject,recording_path,events_path,anchor_onset_s,control_onset_s,episode_id
+sub-EXAMPLE,/absolute/path/to/sub-EXAMPLE_task-example_eeg.edf,/absolute/path/to/sub-EXAMPLE_task-example_events.tsv,120.0,45.0,example-01

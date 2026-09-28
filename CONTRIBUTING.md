@@ -1,0 +1,3 @@
+# Focused audit request
+
+An EEG or time-series analyst could help by reviewing event mapping and the registration-to-code decision register, proposing exact estimators for the missing variance-transfer and correlation-dimension families, checking the validity of phase and VAR proxies on scalp EEG, and defining a measurable criterion C outcome without looking at ds005620 contrasts. Please mark each suggestion as (a) explicitly registered, (b) prospective implementation choice requiring a dated addendum, or (c) exploratory/new hypothesis. Independent implementations and falsifying synthetic cases are welcome. Do not submit participant-level recordings or claim a Go from the current scaffold. Code contributions are made under the repository's MIT License.

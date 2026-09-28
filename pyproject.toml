@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "irc-anesthesia-stage1"
+version = "0.1.0"
+description = "Auditable scaffold for the preregistered Stage 1 anesthesia screen"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "scipy>=1.11", "pandas>=2.0"]
+
+[project.optional-dependencies]
+eeg = ["mne>=1.6"]
+
+[project.scripts]
+irc-stage1 = "irc_stage1.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

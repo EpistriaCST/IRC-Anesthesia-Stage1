@@ -1,0 +1,11 @@
+data/raw/
+data/derivatives/
+results/
+*.egg-info/
+__pycache__/
+.venv/
+.pytest_cache/
+*.pyc
+*.npy
+*.npz
+!tests/fixtures/*.npy
